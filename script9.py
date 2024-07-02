@@ -55,7 +55,54 @@ q3 = numbers.index(666,3)
 #q4 = numbers.index(6666)
 print(q2)
 print(q3)
-print(q4)
+
+
+
+x = 10
+y = x
+y = 900
+print(x) # 10
+print(y) # 900
+
+# program 2
+names = ["amol","ram","sham"]
+names2 = names 
+names2[0] = "amit"
+
+print(names)
+print(names2)
+
+cities = ["pune","mumbai","bangalore"]
+citiesB  = cities 
+cities[0] = "wardha"
+
+print(cities)
+print(citiesB)
+
+
+# program 9
+
+country = ["india","srilanka","pakistan"]
+countriesB = country.copy()
+countriesB[0] = "bharat"
+print(countriesB)
+print(country)
+
+country.sort()
+print(country)
+
+marks = [11,22,33]
+marksB = [44,55,66]
+
+marksB.extend(marks)
+print(marksB)
+
+
+# dictionary
+
+
+
+
 
 
 
