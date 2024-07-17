@@ -95,12 +95,57 @@ setG = {33,44,55,66,77}
 setG.update([99,200,1333])
 setG.update((222,333,4444))
 print(setG)
+
 # queries 
+setA = {11,22,33}
+setB = {44,55,66}
+setC = setA.union(setB)
+print(setC)
+
+# intersection()
+setA = {11,22,33,55}
+setB = {33,44,55,66}
+setD = setA.intersection(setB)
+print(setD)
+
+# intersectionUpdate()
+setA.intersection_update(setB) 
+print(setA)# {33,55}
 
 
+# diffrence()
+setA = {11,22,33}
+setB = {44,55,66,33}
+
+# print(setA.difference(setB))
+# print(setB.difference(setA))
+
+setA.difference_update(setB) # {11,22}
+print(setA)
+
+#symmetric_difference()
+setA = {11,22,33}
+setB = {44,55,66,33}
+print(setA.symmetric_difference(setB))
+
+setA = {11,22,33,66}
+setB = {44,55,66,33}
+setA.symmetric_difference_update(setB)
+print(setA)
 
 
+setA = {11,22,33}
+setB = {11,22}
 
+print(setA.issuperset(setB))
+print(setB.issubset(setA))
+
+# Sets
+setC = {11,33}
+setD = {44,22,11}
+print(setC.isdisjoint(setD))
+
+# int float boolean , str, list ,dictionary , tuple ,set
 
 
 
