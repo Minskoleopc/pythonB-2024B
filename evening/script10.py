@@ -56,7 +56,7 @@ s6 = str6.isupper()
 print(s6)
 
 str7 = "chinmay"
-s7 = str7.lower()
+s7 = str7.islower()
 print(s7)
 
 str8 = "Sanjay Is good Person"
@@ -100,6 +100,63 @@ str15 = "222"
 print(str13.isalnum())
 print(str14.isalnum())
 print(str15.isalnum())
+
+
+
+# program 6
+str = "ninad"
+e = str.count("n")
+print(e)
+str2 = "mayuri"
+
+info = ["chinmay","shirish","deshpande"]
+print(info)
+e2 = "-".join(info)
+print(e2)
+
+info2 = ["chinmaydeshpande","gmail.com"]
+e3 = "@".join(info2)
+print(e3)
+ 
+# program 7
+firstName = "chinmay"
+lastName = "deshpande"
+# My firstName is chinmay and lastName is deshpande
+
+lastName = "deshpande"
+print("My firstName is {} and lastName is {}".format(firstName,lastName))
+print(f"My firstName is {firstName} and lastName {lastName}")
+
+# program 8
+city = " chandrapur"
+e2 = len(city)
+print(e2)
+
+e3 = city.lstrip()
+print(len(e3))
+
+city2 = " chandrapur "
+e4 = city2.rstrip()
+print(len(e4))
+
+city2 = " chandrapur "
+e5 = city2.strip()
+print(len(e5))
+
+
+city2 = "pune"
+# 0  1   2   3
+# p  u   n   e
+print(city2.index('u'))
+print(city2.find('U'))
+
+
+
+
+
+
+
+
 
 
 
