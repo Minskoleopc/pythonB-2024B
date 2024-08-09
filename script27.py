@@ -71,11 +71,84 @@ amit2.changeCountry("bharat")
 print(amit2.country)
 print(amit.country)
 
-# instance 
+# instance method - instance variables
+class Person:
+    # class variable
+    country = "india"
 
-# class methods 
+    def __init__(self,fn,ln,ag):
+        self.firstName  = fn 
+        self.lastName = ln 
+        self.age = ag
 
-# static methods
+    # instance method
+    def displayName(self):
+        print(self.firstName + self.lastName)
+
+    # instance
+    def changeFirstName(self,rfn):
+        self.firstName = rfn
+
+amol = Person("amol","rao",23)
+chinmay = Person("chinmay","deshpande",34)
+
+print(amol.age)
+print(amol.firstName)
+print(amol.lastName)
+print(amol.country)
+amol.displayName()
+amol.country  = "bharat"
+
+print(chinmay.country)
+print(amol.country)
+
+# class methods -- className -- change common or class variables
+
+class Person:
+    # class variable
+    country = "india"
+
+    def __init__(self,fn,ln,ag):
+        # instance vraible
+        self.firstName = fn 
+        self.lastName = ln 
+        self.age = ag
+    
+    # instance method
+    def displayName(self):
+        print(self.firstName + self.lastName)
+
+    @classmethod
+    def changeCountry(cls,cc):
+        Person.country = cc
+
+
+amol = Person("amol","rao",23)
+chinmay = Person("chinmay","deshpande",34)
+
+print(amol.firstName)
+print(amol.lastName)
+print(amol.age)
+print(amol.country)
+
+print(chinmay.firstName)
+print(chinmay.lastName)
+print(chinmay.age)
+print(chinmay.country)
+
+Person.changeCountry("bharat")
+print(amol.country)
+print(chinmay.country)
+
+amol.country = "IND"
+
+print(amol.country)
+
+
+
+
+
+# static methods - information - className -
         
 
 
