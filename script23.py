@@ -62,6 +62,9 @@ from functools import reduce
 e = reduce(lambda acc,el:acc+el,numbers)
 print(e)
 
+# map() , filter() , reduce()
+# list comprehension ---
+
 
 
 

@@ -79,3 +79,5 @@ print(amol.lastFiveTransactions())
 print(amol.transactions)
 
 
+# python ---- oops , filehandling , function , regEx , directories
+# python - dataanaylsis
