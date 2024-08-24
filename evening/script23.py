@@ -82,3 +82,96 @@ e.save()
 # print("hello "+ "world!")
 # print(2 + "hello")
 # # print(obj + obj)
+
+print(1 + 1)
+print("hello "+ "world")
+# operator overloading
+
+# class BookX:
+#     def __init__(self,pages):
+#        self.pages = pages
+    
+#     # addition operator overloaded to get result of adding object
+#     def __add__(self,others):
+#         return self.pages + others.pages
+
+# class BookY:
+#     def __init__(self,pages):
+#       self.pages = pages
+#     def __add__(self,others):
+#         return self.pages + others.pages
+    
+
+# mahabharat = BookX(120)
+# ramayan = BookY(240)
+
+# print(mahabharat.pages + ramayan.pages)
+# print(mahabharat+ramayan)
+# print(ramayan+mahabharat)
+
+
+class BookY:
+    def __init__(self,pages):
+      self.pages = pages
+
+class BookX:
+    def __init__(self,pages):
+       self.pages = pages
+
+    def __gt__(self,other):
+       return self.pages > other.pages 
+
+
+x = BookX(30)
+y = BookY(25)
+print(x.pages > y.pages)
+print(x > y)
+
+# __lt__ , ___sub__
+
+
+# inheritance 
+
+# single 
+# multi-level
+# herarchical 
+# multiple
+
+# polymorphism
+# duck typing 
+# overloading 
+# overriding 
+# operator overload
+
+
+# abstraction
+
+from abc import ABC , abstractmethod
+
+class Demo(ABC):
+   @abstractmethod
+   def loan(self):
+      pass
+   
+   def save(self):
+      pass
+
+class SBI(Demo):
+   def loan(self):
+      print("loan method")
+
+class PNB(Demo):
+   pass
+
+a = SBI()
+
+
+
+
+
+
+
+
+
+
+
