@@ -63,6 +63,16 @@ f1.close()
 # 60                    80 +
 
 
+# karshima -- stubborn , postive
+# chinmay  -- stubborn , negative
+# krishna  --- relax  , positive
+
+
+# winner ----- ?
+# consistency
+# tracking 
+# what you see , eat , listen ,say , integrity
+
 
 
 
