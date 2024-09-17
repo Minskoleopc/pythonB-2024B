@@ -44,15 +44,70 @@
 #'rohit      '
 #'deepak     '
 
-reclen = 10
+# reclen = 10
 
-with open('name.bin',"wb") as f:
-    n = int(input('enter the number of name'))
-    for x in range(n):
-        name = input('enter the names :') # chinmay  sham
-        name = name + ((reclen - len(name))) * " " # 'chinmay   '
-        name = name.encode()
-        f.write(name)
+# with open('name.bin',"wb") as f:
+#     n = int(input('enter the number of name'))
+#     for x in range(n):
+#         name = input('enter the names :') # chinmay  sham
+#         name = name + ((reclen - len(name))) * " " # 'chinmay   '
+#         name = name.encode()
+#         f.write(name)
+
+# program 1
+# reclen = 10
+# with open('cities.bin','wb') as f:
+#     n = int(input('please enter the number of cities'))
+#     for i in range(n):
+#         city = input('please enter a city name ...') # "pune"
+#         city = city + (reclen - len(city)) * " " #"pune      "
+#         city = city.encode()
+#         f.write(city)
+
+import os
+reclen = 10
+position = 0
+size = os.path.getsize('cities.bin') # 30
+n = int(size/reclen)
+with open('cities.bin','rb')as f:
+    for i in range(n):
+        f.seek(0)
+        str = f.read(10)
+        str = str.decode()
+        print(str)
+        position = position+ reclen 
+        
+
+# search the city name in file
+
+# replace the name 
+
+# delete the record
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
