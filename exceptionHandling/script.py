@@ -1,0 +1,44 @@
+# print("hello")
+# x = int(input('Enter a number 1..?'))
+# y = int(input('Enter a number 2..?'))
+# print(x/y)
+# print('Bye')
+
+
+# program 2
+# print("hello")
+# try:
+#     x = int(input('Enter a number 1..?')) # 10
+#     y = int(input('Enter a number 2..?')) # 0
+#     print(x/y) 
+# except:
+#     print("error .....occured")
+# print("bye")
+
+# program 3 
+# print('hello')
+# try:
+#     x = int(input('Enter the number 1...?'))
+#     y = int(input('Enter the number 2'))
+#     print(x/y)
+# except ZeroDivisionError:
+#     print('please enter the correct input')
+# except ValueError:
+#     print('please enter the numbers ')
+# except:
+#     print('please enter the valid input')
+# print("bye")
+    
+# program 4
+
+try:
+    #          0   1  2  3 4
+    numbers = [11,22,33,44,55]
+    n = int(input('please enter the index..'))
+    print(numbers[n])
+except IndexError:
+    print("please correct the index number")
+finally:
+    print('i will always execute...')
+
+# try  except else finally
